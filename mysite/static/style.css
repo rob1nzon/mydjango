@@ -13,3 +13,8 @@ body {
 h1 {
     color: ORANGE;
 }
+
+a {
+   color: yellow;
+   font-size: 20px;
+}

@@ -6,6 +6,7 @@ class Post(models.Model):
  slug = models.SlugField(unique=True, max_length=255)
  description = models.CharField(max_length=255)
  content = models.TextField()
+ main = models.BooleanField(default=False)
  published = models.BooleanField(default=True)
  created = models.DateTimeField(auto_now_add=True)
      

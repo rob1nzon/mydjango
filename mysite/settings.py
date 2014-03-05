@@ -31,7 +31,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = (
     'django.contrib.contenttypes',
-    'django.contrib.sites',
+    #'django.contrib.sites',
     'django.contrib.auth',
     'django.contrib.admin',
     'django.contrib.sessions',
@@ -53,6 +53,7 @@ MIDDLEWARE_CLASSES = (
 TEMPLATE_DIRS = (
         '/root/mysite/mysite/templates',
 )
+
 
 STATICFILES_DIRS = (
         '/root/mysite/mysite/static/',

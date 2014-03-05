@@ -12,3 +12,7 @@ def post(request, slug):
  post = get_object_or_404(Post, slug=slug)
  # now return the rendered template
  return render(request, 'blog/post.html', {'post': post})
+
+def mainp(request):
+ mainp = Post.objects.filter(main=True)
+ return render(request, 'blog/index.html',{'mainp':mainp})

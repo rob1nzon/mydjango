@@ -5,19 +5,8 @@
      
     {% block content %}
         <h1> My honey homepage!  </h1>
-	{% for post in posts %}{{post.title}}{% endfor %}
-        {% for post in posts %}
+	{% for post in posts %}<a href="{{post.get_absolute_url}}">{{post.title}}</a>   {% endfor %}
         <div class="post">
-            <h2>
-                    {{post.title}}
-            </h2>
-            <p>{{post.description}}</p>
-            <p>
-                Created by rob1nzon on
-                <time datetime="{{post.created|date:"c"}}">
-                {{post.created|date}}
-                </time>
-            </p>
-       </div>
-{% endfor %}
+           {% for mainp in posts %} {{mainp.description}} {% endfor %}
+      </div>
 {% endblock %}
