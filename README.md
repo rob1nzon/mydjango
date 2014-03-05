@@ -1,4 +1,4 @@
-mydjango
+Django blog app
 ========
 
 Simple django blog applicaion
