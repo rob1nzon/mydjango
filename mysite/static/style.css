@@ -1,0 +1,15 @@
+body {
+    color:white;
+    font-size: 13px;
+    font-family: "Helvetica", "Liberation Sans", "Arial", sans-serif;
+    line-height: 1.6em;
+    text-align: center;
+    min-width: 400px;
+    padding: 0;
+    margin: 0;
+    background: #222222;    
+}
+
+h1 {
+    color: ORANGE;
+}
