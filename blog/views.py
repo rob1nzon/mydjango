@@ -14,5 +14,7 @@ def post(request, slug):
  return render(request, 'blog/post.html', {'post': post})
 
 def mainp(request):
- mainp = Post.objects.filter(main=True)
+ mainp = Post.objects.filter(published=False)
  return render(request, 'blog/index.html',{'mainp':mainp})
+
+
