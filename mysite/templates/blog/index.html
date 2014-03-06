@@ -4,7 +4,7 @@
      
     {% block content %}
         <a href='http://rob1nzon.ru:70'><h1> My honey homepage!  </h1></a>
-      {% for post in posts %}<a href="{{post.slug}}">{{post.title}}</a>   {% endfor %}
+      {% for post in posts %}<a href="http://rob1nzon.ru:70/{{post.slug}}">{{post.title}}</a>   {% endfor %}
       <center><div style="width: 98%;border-radius: 5px; opacity: 0.8; background: #319574">
           {% autoescape off %} {{mainp.first.content}} {% endautoescape %}
      <br></div>
