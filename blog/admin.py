@@ -3,7 +3,7 @@ from blog.models import Post
      
 class PostAdmin(admin.ModelAdmin):
 # fields display on change list
- list_display = ['title', 'description']
+ list_display = ['title', 'description','main']
 # fields to filter the change list with
  list_filter = ['published', 'created']
 # fields to search in change list

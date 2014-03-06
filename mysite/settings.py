@@ -33,6 +33,7 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     #'django.contrib.sites',
     'django.contrib.auth',
+    #'debug_toolbar',
     'django.contrib.admin',
     'django.contrib.sessions',
     'django.contrib.messages',
@@ -48,6 +49,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    #'debug_toolbar.middleware.DebugToolbarMiddleware',
 )
 
 TEMPLATE_DIRS = (
