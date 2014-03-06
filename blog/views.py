@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render,get_object_or_404
 from blog.models import Post
      
 def index(request):
@@ -10,9 +10,11 @@ def index(request):
      
 def post(request, slug):
 # get the Post object
- post = get_object_or_404(Post, slug=slug)
+ if True:
+  post = get_object_or_404(Post, slug=slug)
+  menu = Post.objects.filter(published=True)
  # now return the rendered template
- return render(request, 'blog/post.html', {'post': post})
+ return render(request, 'blog/post.html', {'post': post, 'menu':menu})
 
 #def mainp(request):
 # mainp = Post.objects.filter(main=True)
